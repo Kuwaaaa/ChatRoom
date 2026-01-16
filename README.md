@@ -2,6 +2,10 @@
 
 基于 WebRTC P2P 技术的实时视频同步观看应用，支持多人一起看视频、实时弹幕互动和进度同步。
 
+## 🔗 GitHub 仓库
+
+**项目地址**: https://github.com/Kuwaaaa/ChatRoom
+
 ## 📺 在线演示
 
 **沙盒测试地址**: https://3000-iscsdkljnrzubq6uootlt-5634da27.sandbox.novita.ai
@@ -101,8 +105,8 @@ webapp/
 
 ```bash
 # 克隆项目
-git clone <your-repo-url>
-cd webapp
+git clone https://github.com/Kuwaaaa/ChatRoom.git
+cd ChatRoom
 
 # 安装依赖
 npm install
@@ -280,8 +284,8 @@ MIT License
 
 ## 📞 联系方式
 
-- GitHub: [Your GitHub]
-- Email: [Your Email]
+- GitHub: https://github.com/Kuwaaaa/ChatRoom
+- 作者: Kuwaaaa
 
 ---
 
