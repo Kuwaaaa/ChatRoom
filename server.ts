@@ -1,7 +1,7 @@
 import { createServer } from 'http';
 import { parse } from 'url';
 import next from 'next';
-import { setupSocketIO } from './server/socket-server';
+import { setupSocketIO } from './server/socket-server.js';
 import { mkdir } from 'fs/promises';
 import { join } from 'path';
 

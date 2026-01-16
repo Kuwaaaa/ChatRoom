@@ -1,6 +1,6 @@
 import { Server as SocketIOServer } from 'socket.io';
 import { Server as HTTPServer } from 'http';
-import { roomDb, danmakuDb } from '@/lib/database';
+import { roomDb, danmakuDb } from '../lib/database.js';
 import { nanoid } from 'nanoid';
 
 // 房间内用户管理
