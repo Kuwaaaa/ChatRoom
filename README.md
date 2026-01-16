@@ -10,6 +10,16 @@
 
 **沙盒测试地址**: https://3000-iscsdkljnrzubq6uootlt-5634da27.sandbox.novita.ai
 
+## 🚀 快速开始
+
+**Windows 用户**: 双击 `start.bat` 即可启动！  
+**Linux/Mac 用户**: 运行 `./start.sh` 即可启动！
+
+详细部署指南：
+- [快速开始](./QUICKSTART.md) - 一键启动指南
+- [Windows 部署](./DEPLOY_WINDOWS.md) - Windows 详细说明
+- [Linux 部署](./DEPLOY.md) - Linux/服务器部署
+
 ## ✨ 已完成功能 (Phase 1 & 2)
 
 ### Phase 1 - 核心功能 ✅
