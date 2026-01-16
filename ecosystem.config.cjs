@@ -2,7 +2,8 @@ module.exports = {
   apps: [
     {
       name: 'webapp',
-      script: 'server.mjs',
+      script: 'npx',
+      args: 'tsx server.ts',
       env: {
         NODE_ENV: 'development',
         PORT: 3000

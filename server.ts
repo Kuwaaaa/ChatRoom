@@ -1,7 +1,7 @@
 import { createServer } from 'http';
 import { parse } from 'url';
 import next from 'next';
-import { setupSocketIO } from './server/socket-server.js';
+import { setupSocketIO } from './server/socket-server';
 import { mkdir } from 'fs/promises';
 import { join } from 'path';
 
@@ -21,7 +21,7 @@ app.prepare().then(async () => {
   // 创建 HTTP 服务器
   const httpServer = createServer(async (req, res) => {
     try {
-      const parsedUrl = parse(req.url, true);
+      const parsedUrl = parse(req.url || '', true);
       await handle(req, res, parsedUrl);
     } catch (err) {
       console.error('Error handling request:', err);

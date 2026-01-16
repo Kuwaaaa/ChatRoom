@@ -3,31 +3,13 @@
 import { useParams, useSearchParams } from 'next/navigation';
 import { useEffect, useState, useRef } from 'react';
 import { getSocket } from '@/lib/socket';
+import { User, Danmaku } from '@/lib/types';
 import VideoPlayer from '@/components/VideoPlayer';
 import DanmakuOverlay from '@/components/DanmakuOverlay';
 import DanmakuInput from '@/components/DanmakuInput';
 import ChatPanel from '@/components/ChatPanel';
 import UserList from '@/components/UserList';
 import { nanoid } from 'nanoid';
-
-interface User {
-  userId: string;
-  userName: string;
-  isHost: boolean;
-  role?: 'super' | 'normal';
-  socketId?: string;
-}
-
-interface Danmaku {
-  id: string;
-  room_id: string;
-  user_id: string;
-  user_name: string;
-  text: string;
-  video_time: number;
-  reply_to: string | null;
-  timestamp: number;
-}
 
 export default function RoomPage() {
   const params = useParams();

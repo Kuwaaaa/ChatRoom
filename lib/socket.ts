@@ -67,7 +67,7 @@ export class P2PMessageRouter {
       return;
     }
     
-    if (this.p2p && priority !== 'critical') {
+    if (this.p2p) {
       // 尝试 P2P
       const successCount = this.p2p.broadcastP2P({ event, data });
       

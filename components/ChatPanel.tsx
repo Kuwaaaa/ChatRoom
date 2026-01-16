@@ -1,15 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-
-interface Danmaku {
-  id: string;
-  user_name: string;
-  text: string;
-  video_time: number;
-  reply_to: string | null;
-  timestamp: number;
-}
+import { Danmaku } from '@/lib/types';
 
 interface ChatPanelProps {
   danmakuList: Danmaku[];

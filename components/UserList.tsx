@@ -1,11 +1,6 @@
 'use client';
 
-interface User {
-  userId: string;
-  userName: string;
-  isHost: boolean;
-  role?: 'super' | 'normal';
-}
+import { User } from '@/lib/types';
 
 interface UserListProps {
   users: User[];
