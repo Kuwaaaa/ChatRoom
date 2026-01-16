@@ -1,0 +1,35 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "基于 WebRTC P2P 的实时视频观看室",
+  "main": "server.mjs",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.mjs",
+    "clean-port": "fuser -k 3000/tcp 2>/dev/null || true",
+    "db:reset": "rm -rf data && mkdir data"
+  },
+  "keywords": ["webrtc", "p2p", "video", "danmaku"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^25.0.9",
+    "@types/react": "^19.2.8",
+    "better-sqlite3": "^12.6.0",
+    "nanoid": "^5.1.6",
+    "next": "^16.1.2",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "socket.io": "^4.8.3",
+    "socket.io-client": "^4.8.3",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18"
+  }
+}
